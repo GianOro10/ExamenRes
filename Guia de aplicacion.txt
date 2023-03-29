@@ -1,0 +1,16 @@
+Explicacion que explique cómo utilizar la aplicación
+
+Clonar el repositorio:
+Para utilizar la aplicación, primero debe clonar el repositorio desde GitHub o GitLab en su computadora local.
+
+Crear la base de datos:
+Asegúrese de que tenga instalado MySQL o Postgres en su computadora local y ejecute el script de creación de la base de datos para crear la base de datos y las tablas necesarias.
+
+Compilar y empaquetar el proyecto:
+Abra el proyecto en su IDE preferido y ejecute el comando "mvn clean install" en la línea de comandos para compilar y empaquetar el proyecto en un archivo jar.
+
+Ejecutar el proyecto:
+Ejecute el archivo jar generado en el paso anterior mediante el comando "java -jar examen-1.0-SNAPSHOT.jar" en la línea de comandos. La aplicación se ejecutará en el puerto 8080 por defecto.
+
+Probar la API:
+Ahora que la aplicación está en ejecución, puede probar la API utilizando las solicitudes de API proporcionadas en la colección de POSTMAN proporcionada. Importe la colección de solicitudes de API en su cliente POSTMAN y realice solicitudes a la API para crear un examen, un estudiante, asignar el examen a un estudiante, recopilar las respuestas del estudiante y calificar el examen.

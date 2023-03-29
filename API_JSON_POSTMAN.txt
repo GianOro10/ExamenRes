@@ -1,0 +1,96 @@
+olección de solicitudes API en formato JSON para importar en POSTMAN
+
+{
+    "info": {
+        "_postman_id": "11111111-2222-3333-4444-555555555555",
+        "name": "API examen de selección múltiple",
+        "description": "Colección de solicitudes API para examen de selección múltiple",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Crear examen",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"preguntas\":[{\"pregunta\":\"¿Esta es un pregunta?\",\"opciones\":[\"Opción 1.\",\"Opción 2.\",\"Opción 3.\",\"Opción 4.\"],\"opcionCorrecta\":\"A\",\"puntaje\":50},{\"pregunta\":\"¿Está es otra pregunta?\",\"opciones\":[\"Opción 1.\",\"Opción 2.\",\"Opción 3.\",\"Opción 4.\"],\"opcionCorrecta\":\"D\",\"puntaje\":50}],\"puntajeTotal\":100}"
+                },
+                "url": {
+                    "raw": "http://localhost:8080/examen",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "examen"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Crear estudiante",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"nombre\":\"Juan\",\"edad\":25,\"ciudad\":\"Bogotá\",\"zonaHoraria\":\"-05:00\"}"
+                },
+                "url": {
+                    "raw": "http://localhost:8080/estudiante",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "estudiante"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Asignar examen a estudiante",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"idEstudiante\":1,\"idExamen\":1,\"fecha\":\"2023-04-15\"}"
+                },
+                "url": {
+                    "raw": "http://localhost:8080/asignacion",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "asignacion"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Recop
